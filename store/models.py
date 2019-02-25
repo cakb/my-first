@@ -64,10 +64,9 @@ class BaseVendeur(models.Model):
     prenom=models.CharField(max_length=200,verbose_name="Prénom")
     nom=models.CharField(max_length=200,verbose_name="Nom")
     numero=models.CharField(max_length=200,verbose_name="Numéro")
-    produit=models.TextField(verbose_name="Ses produits vendus sur skerli et leur prix",blank=True)
+    produit=models.TextField(verbose_name="Ses produits sur skerli et leur prix",blank=True)
     code=models.CharField(max_length=200,verbose_name="Code du vendeur")
     vente=models.IntegerField(default=0,verbose_name="Nombre de ventes")
-    product=models.ForeignKey(Product,on_delete=models.CASCADE,default=0)
     def __str__(self):
         return self.prenom
 

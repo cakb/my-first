@@ -53,10 +53,10 @@ class OrderAdmin(admin.ModelAdmin):
     search_fields=("creation","validation","contact","product")
 
 class BaseVendeurAdmin(admin.ModelAdmin):
-    list_display=("prenom","nom","numero","produit","code","vente","product")
-    list_filter=("prenom","nom","numero","produit","code","vente","product")
+    list_display=("prenom","nom","numero","produit","code","vente")
+    list_filter=("prenom","nom","numero","produit","code","vente")
     ordering=("vente",)
-    search_fields=("prenom","nom","numero","produit","code","vente","product")
+    search_fields=("prenom","nom","numero","produit","code","vente")
 class BaseClientAdmin(admin.ModelAdmin):
     list_display=("prenom","nom","numero","adresse","produit","achat")
     list_filter=("prenom","nom","numero","adresse","produit","achat")
