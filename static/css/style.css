@@ -1,3 +1,31 @@
+.biz
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    position:relative;
+    bottom:0; 
+    left:0;
+    right:0;
+    border:2px solid red;
+    background-color:red;
+    font-size:1.1em;
+}
+.titi
+{
+   width:21px;
+   height:21px;
+}
+.minou
+{
+   width:20px;
+   height:20px;
+}
+.cil
+{
+   width:10px;
+}
 .firo
 {
     border:2px solid red;
